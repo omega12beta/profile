@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>J.Tamura</title>
+    <meta charset="utf-8" />
+    <meta
+      name="keywords"
+      content="Jackson, Tamura, Jackson Tamura, HTML, Website"
+    />
+    <meta name="description" content="Profile of Jackson Tamura" />
+    <meta name="author" content="Jackson Tamura" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/w3.css" />
+    <link rel="stylesheet" href="css/w3-theme-deep-purple.css" />
+    <script
+      src="https://kit.fontawesome.com/dcf5d0b3c5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="w3-theme-l4">
+    <div class="w3-bar w3-theme-dark">
+        <button class="w3-bar-item w3-button w3-mobile" onclick="openCat('HOME')">HOME</button>
+        <button class="w3-bar-item w3-button w3-mobile" onclick="openCat('ABOUT ME')">ABOUT ME</button>
+        <button class="w3-bar-item w3-button w3-mobile" onclick="openCat('WORK')">WORK</button>
+      </div>
+      
+      <div id="HOME" class="Cat w3-cell-row">
+          <div class="w3-display-container w3-cell">
+          <img src="media/jtam.jpg" alt="MyPic">
+          </div>
+          <div class="w3-cell w3-container">
+            <h1>Jackson Tamura</h1>
+          </div>
+      </div>
+      
+      <div id="ABOUT ME" class="Cat" style="display:none">
+        <h2>ABOUT ME</h2>
+        <p>ABOUT ME</p>
+      </div>
+      
+      <div id="WORK" class="Cat" style="display:none">
+        <h2>WORK</h2>
+        <p>WORK</p>
+      </div>
+      <script>
+        function openCat(CatName) {
+          var i;
+          var x = document.getElementsByClassName("Cat");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          document.getElementById(CatName).style.display = "block";  
+        }
+        </script>
+  </body>
+</html>
